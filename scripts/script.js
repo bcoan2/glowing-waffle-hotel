@@ -10,6 +10,15 @@ let petNames = [
     ["Camel", ["Dromedary", "Bactrian"]],
 ];
 
+ function showInput() {
+  // e.preventDefault();
+    console.log('here');
+    document.getElementById('display').innerHTML =
+    document.getElementById("fname").value + " " +
+    document.getElementById("lname").value + " " +
+    document.getElementById("email").value;
+        }
+
 //when user selects type of pet...load in breeds of pets from array
 $("#petKind").on("change", function(e) {
     //enables the pet dropdown
